@@ -132,3 +132,9 @@
 0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:11:51 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
 0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:11:51 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
 0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:11:58 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
+0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:28:25 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
+0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:28:25 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
+0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:28:25 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
+0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:28:33 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1366
+0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:28:54 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1396
+0:0:0:0:0:0:0:1 - - [24/Mar/2016:17:28:54 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1396

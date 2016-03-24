@@ -37,7 +37,7 @@
 		listaDeLibros = Libro.buscarTodos();
 		for (Libro libro : listaDeLibros) {
 	%>
-	<%=libro.getIsbn()%><%=libro.getTitulo()%><%=libro.getCategoria()%>
+	<%=libro.getIsbn()%> <%= libro.getTitulo()%> <%= libro.getCategoria()%>
 	<br />
 	<%
 		}
