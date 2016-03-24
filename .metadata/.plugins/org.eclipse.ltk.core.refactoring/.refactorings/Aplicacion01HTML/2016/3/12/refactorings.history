@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Aplicacion01HTML/WebContent/Formulario.jsp&apos; to &apos;FormularioInsertarLibro.jsp&apos;" description="Rename resource &apos;Formulario.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Formulario.jsp" name="FormularioInsertarLibro.jsp" stamp="1458181210711" updateReferences="true"/>
+</session>

@@ -1,0 +1,6 @@
+127.0.0.1 - - [15/Mar/2016:22:40:02 -0430] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [15/Mar/2016:22:40:04 -0430] "GET /Aplicacion01HTML/Formulario.jsp HTTP/1.1" 200 513
+0:0:0:0:0:0:0:1 - - [15/Mar/2016:22:43:53 -0430] "GET /Aplicacion01HTML/Formulario.jsp HTTP/1.1" 200 589
+0:0:0:0:0:0:0:1 - - [15/Mar/2016:22:45:45 -0430] "GET /Aplicacion01HTML/Formulario.jsp HTTP/1.1" 200 594
+0:0:0:0:0:0:0:1 - - [15/Mar/2016:22:49:07 -0430] "GET /Aplicacion01HTML/Formulario.jsp HTTP/1.1" 200 679
+0:0:0:0:0:0:0:1 - - [15/Mar/2016:22:49:08 -0430] "GET /Aplicacion01HTML/Formulario.jsp HTTP/1.1" 200 679
