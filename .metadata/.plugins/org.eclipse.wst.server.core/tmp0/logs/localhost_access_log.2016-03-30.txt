@@ -1,0 +1,8 @@
+127.0.0.1 - - [30/Mar/2016:22:07:53 -0430] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:08:03 -0430] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 865
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:08:03 -0430] "GET /Aplicacion01HTML/css/formato.css HTTP/1.1" 404 1025
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:08:03 -0430] "GET /Aplicacion01HTML/js/validacion.js HTTP/1.1" 404 1027
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:12:11 -0430] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 865
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:12:11 -0430] "GET /Aplicacion01HTML/css/formato.css HTTP/1.1" 404 1025
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:12:11 -0430] "GET /Aplicacion01HTML/js/validacion.js HTTP/1.1" 404 1027
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:22:12:11 -0430] "GET /favicon.ico HTTP/1.1" 404 983
