@@ -31,17 +31,21 @@
 			}
 		%>
 	</select>
-	<br>
+	<br/>
+	<br/>
 	<%
 		List<Libro> listaDeLibros = null;
 		listaDeLibros = Libro.buscarTodos();
 		for (Libro libro : listaDeLibros) {
 	%>
 	<%=libro.getIsbn()%> <%= libro.getTitulo()%> <%= libro.getCategoria()%>
+	<a href="BorrarLibro.jsp?isbn=<%=libro.getIsbn()%>">Borrar</a>
+	<a href="FormularioEditarLibro.jsp?isbn=<%=libro.getIsbn()%>">Editar</a>
 	<br />
 	<%
 		}
 	%>
+	<br/>
 	<a href="FormularioInsertarLibro.jsp">Insertar Libro</a>
 </body>
 </html>

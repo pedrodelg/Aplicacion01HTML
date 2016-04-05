@@ -69,4 +69,19 @@ public class Libro {
 		List<Libro> listaDeLibros = helper.seleccionarRegistros(consultaSQL, Libro.class);
 		return listaDeLibros;
 	}
+	
+	public void borrar(){
+		String consultaSQL= "delete from Libros where isbn='"+ this.isbn+"'";
+		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
+		helper.modificarRegistro(consultaSQL);		
+	}
+	
+	public static Libro buscarPorClave(String isbn){
+		
+		String consultaSQL = "select isbn,titulo,categoria from Libros where isbn = '"+isbn+"'";
+		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
+		List<Libro> listaDeLibros = helper.seleccionarRegistros(consultaSQL, Libro.class);
+		return listaDeLibros.get(0);		
+	
+	}
 }

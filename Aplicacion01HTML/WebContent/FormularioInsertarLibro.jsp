@@ -5,14 +5,14 @@
 <head>
 
 	<link rel="stylesheet" type="text/css" href="css/formato.css"/>
-	<script src="js/validacion.js"></script> 
+	<script type="text/javascript" src="js/validacion.js"></script> 
 		
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Formulario Libro</title>
 </head>
 <body>
 
-<form action="InsertarLibro.jsp" onsubmit="return validacion()"> 
+<form action="InsertarLibro.jsp" onsubmit="return validacion();"> 
 
 <fieldset>
 	<legend>Formulario alta Libro</legend>
