@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Method"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Method"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.arquitecturajava.DataBaseHelper"/>
 </qualifiedTypeNameHistroy>
