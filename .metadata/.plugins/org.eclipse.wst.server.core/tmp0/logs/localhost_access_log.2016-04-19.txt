@@ -236,3 +236,11 @@
 0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:09:06 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1302
 0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:09:10 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp?categoria=Informatica HTTP/1.1" 200 861
 0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:09:12 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp?categoria=seleccionar HTTP/1.1" 200 1302
+127.0.0.1 - - [19/Apr/2016:17:56:27 -0430] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:29 -0430] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 937
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:29 -0430] "GET /Aplicacion01HTML/css/formato.css HTTP/1.1" 200 86
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:34 -0430] "GET /Aplicacion01HTML/InsertarLibro.jsp?isbn=w&titulo=w&categoria=w HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:35 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1464
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:39 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp?categoria=Guitars HTTP/1.1" 200 895
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:48 -0430] "GET /Aplicacion01HTML/MostrarLibros.jsp?categoria=w HTTP/1.1" 200 875
+0:0:0:0:0:0:0:1 - - [19/Apr/2016:17:56:49 -0430] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 937

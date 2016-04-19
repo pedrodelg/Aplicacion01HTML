@@ -15,7 +15,7 @@
 <form action="InsertarLibro.jsp" onsubmit="return validacion();"> 
 
 <fieldset>
-	<legend>Formulario alta Libro</legend>
+	<legend>Formulario alta Libro </legend>
 	<p><label for="isbn">ISBN:</label> 
 	<input id="isbn" type="text" name="isbn"></p>
 	<p><label for="titulo">Titulo:</label>
