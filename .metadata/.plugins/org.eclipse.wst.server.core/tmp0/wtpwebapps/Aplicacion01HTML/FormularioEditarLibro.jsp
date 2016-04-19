@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<form action="InsertarLibro.jsp" onsubmit="return validacion();">
+	<form action="SalvarLibro.jsp" onsubmit="return validacion();">
 
 		<fieldset>
 			<legend>Formulario alta Libro</legend>

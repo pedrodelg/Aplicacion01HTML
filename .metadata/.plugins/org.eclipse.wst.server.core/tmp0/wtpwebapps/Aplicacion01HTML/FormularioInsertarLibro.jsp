@@ -23,7 +23,7 @@
 	<p><label for="categoria">Categoria:</label>
 	<input id="categoria" type="text" name="categoria"></p>
 	<p>
-	<input type="submit" value="Insertar">
+	<input type="submit" value="Insertar"> <a href="MostrarLibros.jsp"> Mostrar Libros</a>
 	</p>
 
 </fieldset>
