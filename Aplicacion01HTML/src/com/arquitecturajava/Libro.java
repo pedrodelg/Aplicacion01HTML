@@ -38,12 +38,12 @@ public class Libro {
 		this.titulo = titulo;
 		this.categoria = categoria;
 	}
-	
-	public Libro() {   //no esta en el libro revisar
+
+	public Libro() { // no esta en el libro revisar
 		super();
 	}
-	
-	public Libro(String isbn){   //pendiente con los super
+
+	public Libro(String isbn) { // pendiente con los super
 		super();
 		this.isbn = isbn;
 	}
@@ -51,10 +51,9 @@ public class Libro {
 	public static List<String> buscarTodasLasCategorias() {
 		String consultaSQL = "select distinct(categoria) as categoria from Libros";
 		DataBaseHelper<String> helper = new DataBaseHelper<String>();
-		List<String>listaDeCategorias = helper.seleccionarRegistros(consultaSQL,
-		String.class);
+		List<String> listaDeCategorias = helper.seleccionarRegistros(consultaSQL, String.class);
 		return listaDeCategorias;
-		}
+	}
 
 	public void insertar() {
 		String consultaSQL = "insert into Libros (isbn,titulo,categoria) values ";
@@ -68,5 +67,36 @@ public class Libro {
 		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
 		List<Libro> listaDeLibros = helper.seleccionarRegistros(consultaSQL, Libro.class);
 		return listaDeLibros;
+	}
+
+	public void borrar() {
+		String consultaSQL = "delete from Libros where isbn='" + this.isbn + "'";
+		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
+		helper.modificarRegistro(consultaSQL);
+	}
+
+	public static Libro buscarPorClave(String isbn) {
+
+		String consultaSQL = "select isbn,titulo,categoria from Libros where isbn = '" + isbn + "'";
+		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
+		List<Libro> listaDeLibros = helper.seleccionarRegistros(consultaSQL, Libro.class);
+		return listaDeLibros.get(0);
+
+	}
+
+	public void salvar(){
+		
+		String consultaSQL = "update Libros set titulo = '"+this.titulo+"',categoria= '"+ categoria +"' WHERE isbn = '"+isbn+"'";
+		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
+		helper.modificarRegistro(consultaSQL);
+		
+	}
+	
+	public static List<Libro> buscarPorCategoria(String categoria){
+		String consultaSQL= "select isbn, titulo, categoria from Libros where categoria ='"+categoria+"'";
+		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
+		List<Libro>listaDeLibros = helper.seleccionarRegistros(consultaSQL, Libro.class);
+		return listaDeLibros;
+		
 	}
 }
