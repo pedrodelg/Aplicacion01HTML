@@ -1,5 +1,7 @@
 package com.arquitecturajava;
 
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class Libro {
@@ -55,21 +57,22 @@ public class Libro {
 		return listaDeCategorias;
 	}
 
-	public void insertar() {
+	public void insertar() throws ClassNotFoundException, SQLException, DataBaseException{
 		String consultaSQL = "insert into Libros (isbn,titulo,categoria) values ";
 		consultaSQL += "('" + this.isbn + "','" + this.titulo + "','" + this.categoria + "')";
 		DataBaseHelper helper = new DataBaseHelper();
 		helper.modificarRegistro(consultaSQL);
 	}
 
-	public static List<Libro> buscarTodos() {
+	public static List<Libro> buscarTodos() throws ClassNotFoundException, SQLException,
+	InstantiationException, IllegalAccessException, InvocationTargetException {
 		String consultaSQL = "select isbn,titulo,categoria from Libros";
 		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
 		List<Libro> listaDeLibros = helper.seleccionarRegistros(consultaSQL, Libro.class);
 		return listaDeLibros;
 	}
 
-	public void borrar() {
+	public void borrar() throws ClassNotFoundException, SQLException, DataBaseException {
 		String consultaSQL = "delete from Libros where isbn='" + this.isbn + "'";
 		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
 		helper.modificarRegistro(consultaSQL);
@@ -84,7 +87,7 @@ public class Libro {
 
 	}
 
-	public void salvar(){
+	public void salvar() throws ClassNotFoundException, SQLException, DataBaseException{
 		
 		String consultaSQL = "update Libros set titulo = '"+this.titulo+"',categoria= '"+ categoria +"' WHERE isbn = '"+isbn+"'";
 		DataBaseHelper<Libro> helper = new DataBaseHelper<Libro>();
