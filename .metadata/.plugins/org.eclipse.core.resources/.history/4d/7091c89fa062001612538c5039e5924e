@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<error-page>
+		<exception-type>java.lang.RuntimeException</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+
+	<servlet>
+		<description></description>
+		<display-name>ControladorLibros</display-name>
+		<servlet-name>ControladorLibros</servlet-name>
+		<servlet-class>com.arquitecturajava.ControladorLibros</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControladorLibros</servlet-name>
+		<url-pattern>/ControladorLibros</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-<form action="InsertarLibro.jsp" onsubmit="return validacion();"> 
+<form action="InsertarLibro.do" onsubmit="return validacion();"> 
 
 <fieldset>
 	<legend>Formulario alta Libro </legend>
@@ -21,7 +22,11 @@
 	<p><label for="titulo">Titulo:</label>
 	<input id="titulo" type="text" name="titulo" ></p>
 	<p><label for="categoria">Categoria:</label>
-	<input id="categoria" type="text" name="categoria"></p>
+	
+	<input id="categoria" type="text" name="categoria" ></p>
+	
+	
+	</p>
 	<p>
 	<input type="submit" value="Insertar"> <a href="MostrarLibros.jsp"> Mostrar Libros</a>
 	</p>

@@ -1,15 +1,8 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<%@page import="com.arquitecturajava.DataBaseHelper"%>
-<%@page import="com.arquitecturajava.Libro"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.Statement"%>
-<%@ page import="java.sql.DriverManager"%>
-<%@ page import="java.sql.SQLException"%>
-<%@ page import="java.sql.ResultSet"%>
-<%@ page import="java.util.ArrayList"%>
-<%@ page import="java.util.List"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -20,44 +13,30 @@
 </head>
 <body>
 
-<form> 
-	<select name="categoria">
-		<option value="seleccionar">Seleccionar</option>
-		<%
-			List<String> listaDeCategorias = null;
-			listaDeCategorias = Libro.buscarTodasLasCategorias();
-			for (String categoria : listaDeCategorias) {
-		%>
-			<option value="<%=categoria%>"><%=categoria%></option>
-		<%
-			}
-		%>
-	</select>
-	<input type="submit" value="Filtar">
+	<form action="filtrar.do">
+		<select name="categoria">
+			<option value="seleccionar">Seleccionar</option>
+			
+			<c:forEach var="categoria" items="${listaDeCategorias}">
+				<option value="${categoria}">${categoria}</option>
+			</c:forEach>
+
+		</select> <input type="submit" value="Filtar">
+	</form>
 	<br />
 	<br />
-	<%
-		List<Libro> listaDeLibros = null;
-		if(request.getParameter("categoria")==null || request.getParameter("categoria").equals("seleccionar")) {
-			listaDeLibros = Libro.buscarTodos();
-		}else {
+	
+	<c:forEach var="libro" items="${listaDeLibros}">
+	
+		${libro.isbn} ${libro.titulo}${libro.categoria}
 		
-			listaDeLibros=Libro.buscarPorCategoria(request.getParameter("categoria"));
-			}
-		
-		for (Libro libro : listaDeLibros) {
-	%>
-	<%=libro.getIsbn()%>
-	<%= libro.getTitulo()%>
-	<%= libro.getCategoria()%>
-	<a href="BorrarLibro.jsp?isbn=<%=libro.getIsbn()%>">Borrar</a>
-	<a href="FormularioEditarLibro.jsp?isbn=<%=libro.getIsbn()%>">Editar</a>
+		<a href="BorrarLibro.do?isbn=${libro.isbn}">borrar</a>
+		<a href="FormularioEditarLibro.do?isbn=${libro.isbn}">editarr</a><br>	
+	
+	</c:forEach>
+
 	<br/>
-	<%
-		}
-	%>
-	<br />
 	<a href="FormularioInsertarLibro.jsp">Insertar Libro</a>
-</form>
+
 </body>
 </html>

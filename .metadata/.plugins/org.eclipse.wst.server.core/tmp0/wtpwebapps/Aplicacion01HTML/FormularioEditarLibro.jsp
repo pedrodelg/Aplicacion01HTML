@@ -3,6 +3,8 @@
 
 <%@ page import="java.util.List"%>
 <%@page import="com.arquitecturajava.Libro"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%Libro libro= Libro.buscarPorClave(request.getParameter("isbn"));%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -13,7 +15,7 @@
 </head>
 <body>
 
-	<form action="SalvarLibro.jsp" onsubmit="return validacion();">
+	<form action="SalvarLibro.do" onsubmit="return validacion();">
 
 		<fieldset>
 			<legend>Formulario alta Libro</legend>
@@ -27,23 +29,11 @@
 			</p>
 			<p>
 				<label for="categoria">Categoria:</label> <select name="categoria">
-
-					<%
-						List<String> listaDeCategorias = null;
-						listaDeCategorias = Libro.buscarTodasLasCategorias();
-						for (String categoria : listaDeCategorias) {
-							if (libro.getCategoria().equals(categoria)) {
-					%>
-					<option value="<%=categoria%>" selected="selected">
-						<%=categoria%></option>
-					<%
-						} else {
-					%>
-					<option value="<%=categoria%>"><%=categoria%></option>
-					<%
-						}
-						}
-					%>
+				
+					<c:forEach var="categoria" items="${listaDeCategorias}">
+						<option value="${categoria}">${categoria}</option>
+					</c:forEach>
+	
 				</select>
 			</p>
 			<p>

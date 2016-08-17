@@ -9,11 +9,15 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 public class DataBaseHelper<T> {
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
 	private static final String URL = "jdbc:mysql://localhost/arquitecturajava";
 	private static final String USUARIO = "root";
 	private static final String CLAVE = "";
+	private static final Logger log = Logger.getLogger(DataBaseHelper.class
+			.getPackage().getName());
 
 	public int modificarRegistro(String consultaSQL) throws DataBaseException {
 		Connection conexion = null;
@@ -26,10 +30,10 @@ public class DataBaseHelper<T> {
 			filasAfectadas = sentencia.executeUpdate(consultaSQL);
 		} catch (ClassNotFoundException e) {
 
-			System.out.println("Clase no encontrada" + e.getMessage());
+			log.error("Error de acceso al driver" + e.getMessage());
 			throw new DataBaseException("Clase no encontrada");
 		} catch(SQLException e){
-			System.out.println("Error de SQL"+e.getMessage());
+			log.error("Error de SQL" + e.getMessage());
 		}
 		finally {
 			if (sentencia != null) {

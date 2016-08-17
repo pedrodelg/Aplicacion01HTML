@@ -1,0 +1,14 @@
+127.0.0.1 - - [19/Jul/2016:17:53:41 -0400] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:36 -0400] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 938
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:41 -0400] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 938
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:41 -0400] "GET /Aplicacion01HTML/css/formato.css HTTP/1.1" 200 86
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:41 -0400] "GET /Aplicacion01HTML/js/validacion.js HTTP/1.1" 200 248
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:41 -0400] "GET /favicon.ico HTTP/1.1" 404 983
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:51 -0400] "GET /Aplicacion01HTML/InsertarLibro.jsp?isbn=34&titulo=Prueba&categoria=Web HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:51 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1223
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:53 -0400] "GET /Aplicacion01HTML/BorrarLibro.jsp?isbn=34 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:53 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 1088
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:54 -0400] "GET /Aplicacion01HTML/BorrarLibro.jsp?isbn=jk78 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:54 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 906
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:56 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp?categoria=Prueba2 HTTP/1.1" 200 757
+0:0:0:0:0:0:0:1 - - [19/Jul/2016:17:54:56 -0400] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 938

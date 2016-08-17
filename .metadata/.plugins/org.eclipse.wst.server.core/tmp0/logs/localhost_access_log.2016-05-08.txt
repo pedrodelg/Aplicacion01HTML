@@ -1,0 +1,6 @@
+127.0.0.1 - - [08/May/2016:20:02:23 -0400] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [08/May/2016:20:02:25 -0400] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 938
+0:0:0:0:0:0:0:1 - - [08/May/2016:20:02:26 -0400] "GET /Aplicacion01HTML/js/validacion.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/May/2016:20:02:26 -0400] "GET /Aplicacion01HTML/css/formato.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/May/2016:20:02:28 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 897
+0:0:0:0:0:0:0:1 - - [08/May/2016:20:02:32 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp?categoria=Web HTTP/1.1" 200 748

@@ -1,0 +1,3 @@
+127.0.0.1 - - [11/May/2016:19:13:56 -0400] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [11/May/2016:19:13:58 -0400] "GET /Aplicacion01HTML/FormularioInsertarLibro.jsp HTTP/1.1" 200 938
+0:0:0:0:0:0:0:1 - - [11/May/2016:19:14:03 -0400] "GET /Aplicacion01HTML/MostrarLibros.jsp HTTP/1.1" 200 897
